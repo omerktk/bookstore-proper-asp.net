@@ -1,0 +1,77 @@
+﻿@model myshop.tblcust
+@{
+    ViewBag.Title = "home";
+    Layout = "~/Views/Shared/_mainlayout.cshtml";
+}
+
+<!--responsive-mobile-menu end-->
+
+<section>
+    <div class="block2 rs-overlay">
+        <div class="fixed-bg bg4"></div>
+        <div class="container">
+            <div class="pager-sec">
+                <div class="page-title">
+                    <h3>Login</h3>
+                </div>
+                <!--page-title end-->
+                <div class="page-links">
+                    <ul>
+                        <li><a href="@Url.Action("home", "main")" title="">Home</a></li>
+                        <li><span>Login</span></li>
+                    </ul>
+                </div>
+                <!--page-links end-->
+            </div>
+            <!--pager-sec end-->
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="block4 bd-btm">
+        <div class="container">
+            <div class="login-register">
+                <div class="pager-sec2">
+                   
+                </div>
+                <!--switch-tabs end-->
+                <div class="forms-sec">
+                    <div class="login-reg-form current" id="login-tab">
+                        <form action="/main" method="post">
+                            <div class="row">
+
+
+                                <div class="col-lg-12">
+                                    <tr>
+                                        <td><input id="customermail" name="customermail" type="text" placeholder="EMAIL" required value="" /></td>
+                                    </tr>
+                                </div>
+
+
+                                <div class="col-lg-12">
+                                    <tr>
+                                        <td><input id="customerpass" name="customerpass" type="password" placeholder="Password" maxlength="50" minlength="5" required value="" /></td>
+                                    </tr>
+                                </div>
+                            </div>
+
+                    <div class="col-lg-12">
+                        <tr
+                            <td><div class="forgot"><a href="@Url.Action("Create","reg")" title="">MAKE ACCOUNT</a> </br></br></br></div></td>
+                            <td>@ViewBag.msg</td>
+                            <td><input type="submit" value="login" /></td>
+                        </tr>
+                    </div>
+
+
+
+                </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--login-register end-->
+    </div>
+    
+</section>

@@ -1,0 +1,67 @@
+﻿@model myshop.tblorderdetail
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_mainlayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tblorderdetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.pprice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pprice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pqyt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pqyt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pamount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pamount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tblcust.customername)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblcust.customername)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tblorder.opname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblorder.opname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tblpro.pname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblpro.pname)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.did }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

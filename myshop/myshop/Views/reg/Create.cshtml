@@ -1,0 +1,84 @@
+﻿@model myshop.tblcust
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_mainlayout.cshtml";
+}
+
+<section>
+    <div class="block2 rs-overlay">
+        <div class="fixed-bg bg4"></div>
+        <div class="container">
+            <div class="pager-sec">
+                <div class="page-title">
+                    <h3>Register Here</h3>
+                </div>
+                <!--page-title end-->
+                <div class="page-links">
+                    <ul>
+                        <li><a href="@Url.Action("home", "main")" title="">Home</a></li>
+                        <li><span>Registration</span></li>
+                    </ul>
+                </div>
+                <!--page-links end-->
+            </div>
+            <!--pager-sec end-->
+        </div>
+    </div>
+</section>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+
+    <section>
+        <div class="block4 bd-btm">
+            <div class="container">
+                <div class="login-register">
+                    <div class="pager-sec2">
+                        <h2 style="margin-bottom:15%;">CREATE AN ACCOUNT</h2>
+                    </div>
+                    <!--switch-tabs end-->
+
+                    <div class="form-horizontal">
+                    
+                        
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger"})
+                        <div class="form-group">
+                         
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.customername, new { htmlAttributes = new { @class = "form-control",  @placeholder = "USER NAME" } })
+                                @Html.ValidationMessageFor(model => model.customername, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.customermail, new { htmlAttributes = new { @class = "form-control", @placeholder = "EMAIL" } })
+                                @Html.ValidationMessageFor(model => model.customermail, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                          
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.customerpass, new { htmlAttributes = new { @class = "form-control",  @placeholder = "PASSWORD" , @type = "password" } })
+                                @Html.ValidationMessageFor(model => model.customerpass, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <input type="submit" value="Register" class="btn btn-default" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--login-register end-->
+        </div>
+
+    </section>
+}

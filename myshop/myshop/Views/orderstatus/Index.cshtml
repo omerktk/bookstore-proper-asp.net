@@ -1,0 +1,70 @@
+﻿@model IEnumerable<myshop.tblorderdetail>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_adminlayout1.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.pprice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pqyt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pamount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.odelivery)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tblcust.customername)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tblorder.opname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tblpro.pname)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.pprice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pqyt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pamount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.odelivery)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tblcust.customername)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tblorder.opname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tblpro.pname)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.did }) |
+            @Html.ActionLink("Details", "Details", new { id=item.did }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.did })
+        </td>
+    </tr>
+}
+
+</table>

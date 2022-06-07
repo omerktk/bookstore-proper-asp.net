@@ -1,0 +1,72 @@
+﻿
+@{
+    ViewBag.Title = "Dashboard";
+    Layout = "~/Views/Shared/_adminlayout1.cshtml";
+}
+
+
+
+<div id="dvContents">
+    <h2>Dashboard</h2>
+    <hr />
+
+
+    <h3>All Orders </h3>
+    <input style="margin-top:-20%;" type="button" onclick="PrintTable();" value="Print All" />
+    <br />
+    @{
+                var power = 1;
+                foreach (var pro in ViewBag.p)
+                {
+             power = power + 1;
+            <a class="btn btn-info btn-lg btn-block btn-huge" href="@Url.Action("orderdata", new { oid = pro.oid , price = pro.oamount })" style="padding-top:20px; padding-bottom:20px;">
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>User ID</th>
+                            <th>Order Date</th>
+                            <th>Total Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> @pro.oid </td>
+                            <td> @pro.ostatus </td>
+                            <td>@pro.odate</td>
+                            <td>@pro.oamount</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </a>
+            <br />
+
+        }
+        if (power == 1)
+        {
+            <br />
+            <tr><td>  <a class="btn btn-info btn-lg btn-block btn-huge" style="padding-top:20px; padding-bottom:20px;"> NO ORDER LEFT.</a></td></tr>
+        }
+    }
+</div>
+<br />
+
+<script type="text/javascript">
+    function PrintTable() {
+        var printWindow = window.open('', '', 'height=200,width=400');
+        printWindow.document.write('<html><head><title>Table Contents</title>');
+
+
+
+        //Print the DIV contents i.e. the HTML Table.
+        printWindow.document.write('<body>');
+        var divContents = document.getElementById("dvContents").innerHTML;
+        printWindow.document.write(divContents);
+        printWindow.document.write('</body>');
+
+        printWindow.document.write('</html>');
+        printWindow.document.close();
+        printWindow.print();
+    }
+</script>

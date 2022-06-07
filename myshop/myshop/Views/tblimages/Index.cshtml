@@ -1,0 +1,36 @@
+﻿@model IEnumerable<myshop.tblimage>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_adminlayout1.cshtml";
+}
+
+<h2>Product Images</h2>
+<p>To add image <a href="@Url.Action("Index","products")">Click Here</a></p>
+<table class="table">
+    <tr>
+        <th>
+           Image Name
+        </th>
+        <th>
+           Product Name
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.img_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tblpro.pname)
+        </td>
+        <td>
+      
+            @Html.ActionLink("Delete", "Delete", new { id=item.img_id })
+        </td>
+    </tr>
+}
+
+</table>

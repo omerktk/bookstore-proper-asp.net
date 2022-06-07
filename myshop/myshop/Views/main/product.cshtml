@@ -1,0 +1,155 @@
+﻿
+@{
+    ViewBag.Title = "product";
+    Layout = "~/Views/Shared/_mainlayout.cshtml";
+}
+
+
+    <div class="wrapper">
+        <!--responsive-mobile-menu end-->
+        <section>
+            <div class="product-main-section style2">
+                <div class="container">
+                    @foreach (var pro in ViewBag.p)
+                    {
+                        var bookid = pro.pid;
+
+                        var c = 1;
+                        <div class="full-item-details style2">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="items-carousel">
+                                        <div class="item-main-img">
+                                            @foreach (var img in ViewBag.imgs)
+                                            {
+                                                if (img.pid == pro.pid)
+                                                {
+                                                    if (@c == 1)
+                                                    {
+                                                        <img id="big" src="~/images/@img.img_name" width="200" height="500" alt="">
+                                                        c = c + 1;
+                                                    }
+                                                }
+                                            }
+                                        </div>
+
+                                        <!--item-main-img end-->
+                                    </div>
+                                    <!--items-carousel end-->
+                                    <div class="items-thumb">
+                                        @foreach (var img in ViewBag.imgs)
+                                        {
+                                            <div class="thumb-img">
+                                                <img onclick="document.getElementById('big').src = this.src" src="~/images/@img.img_name" width="98" height="98" alt="">
+                                            </div>
+                                        }
+                                        </div>
+                                    <!--items-thumb end-->
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="item_description style2">
+
+                                        <h2 style="margin-top:5%;">@pro.pname <p>(#@bookid)</p></h2>
+
+                                        <!--rating-info end-->
+                                        <strong style="margin-top:5%;">PKR:@pro.pprice<del></del></strong>
+                                        <p style="margin-top:10%;">@pro.pdetails</p>
+
+
+
+
+                                        <a href="@Url.Action("cartdata", new { pid = bookid, pqty = 1 })" type="button" class="cart-btn"><i class="fa fa-cart-plus"></i>add to cart</a>
+
+
+
+
+
+
+
+                                    </div>
+                                    <!--item_description end-->
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    </div>
+            </div>
+            <!--product-main-section end-->
+        </section>
+        <section>
+            <div class="block less-padding">
+                <div class="container">
+                    <div class="title">
+                        <h2>you may also like</h2>
+                    </div>
+                    <!--title end-->
+
+
+                    <div class="col-lg-15" style="margin-top:15%;">
+                        <div class="main-items-sec">
+                            <!--items-header end-->
+                            <div class="items-show-sec current" id="tab-v1">
+                                <div style="margin-left:2%" class="row">
+                                    <!--pro start-->
+                                    @{
+                                        var all = 1;
+                                        var testc = 1;
+
+
+                                        if (testc == 1){
+                                            foreach (var allp in ViewBag.allp)
+                                            {
+                                                if (@all == 5) { testc = testc + 1; }
+                                                else
+                                                {
+                                                    var bookid = allp.pid;
+                                                    var m = 1;
+                                                    all = all + 1;
+                                                    <div class="col-lg-3">
+                                                        <div class="portfolio-item wow   animated" data-wow-delay="500ms" data-wow-duration="1500ms">
+                                                            <div class="item-img">
+                                                                @foreach (var alli in ViewBag.alli)
+                                                                {
+                                                                    if (alli.pid == allp.pid)
+                                                                    {
+                                                                        if (@m == 1)
+                                                                        {
+                                                                            <img src="~/images/@alli.img_name" width="150px" height="300px" alt="">
+                                                                            m = m + 1;
+                                                                        }
+                                                                    }
+                                                                }
+                                                                <div class="add-to-cart">
+                                                                    <a href="@Url.Action("cartdata", new { pid = bookid, pqty = 1 })" title="">
+                                                                        <i class="fa fa-cart-plus"></i>
+                                                                        Add to cart
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <h3><a href="@Url.Action("product", new { id = allp.pid })" title="">@allp.pname <p>(#@bookid)</p></a></h3>
+                                                            <span>PKR:@allp.pprice</span><br /><br />
+                                                            <a href="@Url.Action("product", new { id = allp.pid })" type="button" class="btn btn-primary">Buy Now</a>
+                                                        </div>
+                                                    </div>
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    <!--pro stop-->
+
+                                </div>
+
+                                <!--item-details-section end-->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                    <!--project-carousel end-->
+                </div>
+            </div>
+        </section>
+
+    </div>
+

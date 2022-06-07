@@ -1,0 +1,67 @@
+﻿@model myshop.tblorder
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_mainlayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tblorder</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.odate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.odate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.opname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.opname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.opphone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.opphone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.opaddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.opaddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.oamount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.oamount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tblcust.customername)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblcust.customername)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.oid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

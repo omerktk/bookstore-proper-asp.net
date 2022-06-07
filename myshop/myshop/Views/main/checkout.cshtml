@@ -1,0 +1,105 @@
+﻿@model myshop.tblorder
+
+
+@{
+    ViewBag.Title = "checkout";
+    Layout = "~/Views/Shared/_mainlayout.cshtml";
+}
+
+<section>
+    <div class="block2 rs-overlay">
+        <div class="fixed-bg bg4"></div>
+        <div class="container">
+            <div class="pager-sec">
+                <div class="page-title">
+                    <h3>Checkout</h3>
+                </div>
+                <!--page-title end-->
+                <div class="page-links">
+                    <ul>
+                        <li><a href="@Url.Action("home", "main")" title="">Home</a></li>
+                        <li><span>Checkout</span></li>
+                    </ul>
+                </div>
+                <!--page-links end-->
+            </div>
+            <!--pager-sec end-->
+        </div>
+    </div>
+</section>
+<section>
+    <div class="block4 bd-btm">
+
+        <div class="container">
+            <h3>Order Details</h3>
+            <div class="row">
+                <div class="col-md-12">
+
+                    <table class="table">
+                        @{
+                            var t = ViewBag.t;
+
+                            <form action="/main/doneorder" method="post">
+                                <input name="__RequestVerificationToken" type="hidden" value="ZGuaO0nSm21mD9MPlkxjBvS9m7lslpjUwEFGyyZJCTqQFWGptRuxCeZQvSgTz1cVXEavNm3dKHMDNUULjj-LMRivV71MYNXR-ys9qA5dBQA1" />    <div class="form-horizontal">
+
+                                    <hr />
+
+
+                                    <div class="form-group">
+                                        <label class="control-label col-md-2" for="opname">Full Name</label>
+                                        <div class="col-md-10">
+                                            <input class="form-control text-box single-line" id="opname" name="opname" type="text" value="" required maxlength="50"/>
+                                            <span class="field-validation-valid text-danger" data-valmsg-for="opname" data-valmsg-replace="true"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label col-md-2" for="opphone">Phone Number</label>
+                                        <div class="col-md-10">
+                                            <input class="form-control text-box single-line" id="opphone" name="opphone" type="number" value="" required />
+                                            <span class="field-validation-valid text-danger" data-valmsg-for="opphone" data-valmsg-replace="true"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label col-md-2" for="opaddress">Shipping Address</label>
+                                        <div class="col-md-10">
+                                            <input class="form-control text-box single-line" id="opaddress" name="opaddress" type="text" value="" required maxlength="50" />
+                                            <span class="field-validation-valid text-danger" data-valmsg-for="opaddress" data-valmsg-replace="true"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <p>  Total Amount : @t</p>
+                                        <div class="col-md-10">
+                                            <input type="hidden" value=" @t " name="money" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-md-10">
+                                            <input type="hidden" value="@Session["customerid"]" id="userid" name="userid" />
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                    <div class="form-group">
+                                        <div class="col-md-offset-2 col-md-10">
+                                            <input type="submit" value="Done Order" class="btn btn-default" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                          
+                      
+                        }
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

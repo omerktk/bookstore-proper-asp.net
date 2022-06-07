@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from www.shmai.com/preview/storenix-html/faqs.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Jul 2021 20:14:25 GMT -->
+<head>
+    <link rel="apple-touch-icon" sizes="76x76" href="~/adminassets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="~/adminassets/img/favicon.png">
+    <meta charset="UTF-8">
+    <title>StoreNix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" type="text/css" href="~/assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/lib/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/lib/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/jquery.range.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/color.css">
+    <link rel="alternate stylesheet" type="text/css" href="~/assets/css/color.css" title="color1" />
+    <link rel="alternate stylesheet" type="text/css" href="~/assets/css/color2.css" title="color2" />
+    <link rel="alternate stylesheet" type="text/css" href="~/assets/css/color3.css" title="color3" />
+    <link rel="alternate stylesheet" type="text/css" href="~/assets/css/color4.css" title="color4" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Preloader -->
+
+        <header class="style3">
+            <div class="container">
+                <div class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <!--menu-btn end-->
+                <div class="navigations">
+                    <ul>
+                        <li><a href="@Url.Action("home", "main")" title="">Home</a></li>
+                        <li><a href="@Url.Action("allproducts", "main")" title="">Products</></li>
+                        <li>
+                            <a href="#" title="">QnA</a>
+                            <ul>
+                                <li><a href="@Url.Action("faqs", "main")" title="">Faqs</a></li>
+                                <li><a href="@Url.Action("feeds", "main")" title="">Queries</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--navigations end-->
+
+                <div class="logo">
+                    <a href="@Url.Action("home","main") " title=""><img src="~/assets/images/logo.png" alt=""></a>
+                </div>
+                <div class="navigations">
+                    <ul>
+                        <li><a href="/main/about" title="">about</a></li>
+                        <li><a href="/main/contact" title="">contact</a></li>
+                        @if (Session["custid"] == null)
+                        {
+                            <li><a href="@Url.Action("home","main") " title="">Login</a></li>
+}
+                        @if (Session["custid"] != null)
+                        {
+                            <li><a href="@Url.Action("logout","main")" title="">Logout</a></li>
+}
+                    </ul>
+                </div>
+                <!--logo end-->
+                <!--navigations end-->
+                <div class="mobile-men-btn">
+                    <a href="#" title=""><i class="fa fa-bars"></i></a>
+                </div>
+                <!--mobile-men-btn end-->
+                @if (Session["custid"] != null)
+                {
+                    <div class="card-sec">
+                        <ul>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa fa-user"></i>
+
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+
+                                    <a class="dropdown-item" href="@Url.Action("cart", "main")">My Cart</a>
+
+                                    <a class="dropdown-item" href="@Url.Action("myorders","main")">My Orders</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>}
+            </div>
+        </header>
+        <!--header end-->
+        <div class="responsive-mobile-menu">
+            <a href="#" title="" class="close-menu-btn"><i class="fa fa-close"></i></a>
+            <ul>
+                <li><a href="@Url.Action("home", "main")" title="">Home</a></li>
+                <li><a href="@Url.Action("allproducts", "main")" title="">Products</a></li>
+                <li><a href="@Url.Action("faqs", "main")" title="">Faqs</a></li>
+                <li><a href="@Url.Action("feeds", "main")" title="">Queries</a></li>
+                <li><a href="/main/about" title="">about</a></li>
+                <li><a href="/main/contact" title="">contact</a></li>
+                @if (Session["custid"] == null)
+                {
+                    <li><a href="@Url.Action("home", "main")" title="">Login</a></li>
+}
+                @if (Session["custid"] != null)
+                {
+                    <li><a href="@Url.Action("logout","main")" title="">Logout</a></li>
+}
+            </ul>
+        </div>
+
+        <!--1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111-->
+        @RenderBody()
+        <!--1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111-->
+
+        <footer>
+            <div class="footer-style2 wow ">
+                <div class="container">
+                    <div class="footer-data2">
+                        <div class="row">
+                            <div class="widget widget-about style2">
+                                <a href="#" title=""><img src="~/assets/images/logo.png" alt=""></a>
+                                <p>8863 Myrtle Ave, Ridgewood, NY, 11385 shop@storenix.com </p>
+                                <h2>1-718-441-5628</h2>
+                                <ul>
+                                    <li><a href="#" title=""><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#" title=""><i class="fa fa-vimeo"></i></a></li>
+                                    <li><a href="#" title=""><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#" title=""><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#" title=""><i class="fa fa-pinterest-p"></i></a></li>
+                                    <li><a href="#" title=""><i class="fa fa-youtube-play"></i></a></li>
+                                </ul>
+                            </div>
+                            <!--widget-about end-->
+                            <div class="widget widget-links">
+                                <h3 class="widget-title">information</h3>
+                                <ul>
+                                    <li><a href="/main/about" title="">About StoreNix</a></li>
+                                    <li><a href="/main/about" title="">Privacy Policy</a></li>
+                                    <li><a href="/main/cart" title="">My Cart</a></li>
+                                    <li><a href="/main/myorders" title="">User Account</a></li>
+                                   
+                                </ul>
+                            </div>
+                            <!--widget-links end-->
+                            <div class="widget widget-links">
+                                <h3 class="widget-title">customer care</h3>
+                                <ul>
+                                    <li><a href="/main/myorders" title="">Shipping</a></li>
+                                    <li><a href="/main/myorders" title="">Order Tracking</a></li>
+                                    
+                                    <li><a href="/main/feeds" title="">Help &amp; FAQ’s</a></li>
+                                </ul>
+                            </div>
+                            <!--widget-links end-->
+                            <div class="widget widget-links">
+                                <h3 class="widget-title">my ACCOUNT</h3>
+                                <ul>
+                                    <li><a href="/main/logout" title="">Login</a></li>
+                                   
+                                    <li><a href="/main/myorders" title="">My Orders</a></li>
+                                    
+                                    <li><a href="/main/feeds" title="">Help &amp; FAQ’s</a></li>
+                                </ul>
+                            </div>
+                            <!--widget-links end-->
+                        </div>
+                    </div>
+                    <!--footer-data2 end-->
+                </div>
+            </div>
+            <!--footer-style2 end-->
+            <div class="bottom-strip style2">
+                <div class="container">
+                    <p>© Copyrights 2020 StoreNix All rights reserved.</p>
+                    <div class="payment-links">
+                        <ul>
+                            <li><a href="#" title=""><img src="~/assets/images/ft-icon1.png" alt=""></a></li>
+                            <li><a href="#" title=""><img src="~/assets/images/ft-icon2.png" alt=""></a></li>
+                            <li><a href="#" title=""><img src="~/assets/images/ft-icon3.png" alt=""></a></li>
+                            <li><a href="#" title=""><img src="~/assets/images/ft-icon4.png" alt=""></a></li>
+                            <li><a href="#" title=""><img src="~/assets/images/ft-icon5.png" alt=""></a></li>
+                            <li><a href="#" title=""><img src="~/assets/images/ft-icon6.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <!--payment-links end-->
+                </div>
+            </div>
+            <!--bottom-strip end-->
+        </footer>
+        <a href="#" title="" class="scrollToTop"><i class="fa fa-arrow-up"></i></a>
+        <div class="search-page">
+            <div class="container">
+                <div class="search-form-page">
+                    <h2>Search Products</h2>
+                    <form>
+                        <input type="text" name="search" placeholder="Enter Your Keyword Here...">
+                        <button type="submit"><i class="ion-android-search"></i></button>
+                    </form>
+                    <div class="close-search">
+                        <a href="#" title="" class="close-search"> <i class="ion-android-close"></i> Close </a>
+                    </div>
+                    <!--close-search end-->
+                </div>
+                <!--search-form-page end-->
+            </div>
+        </div>
+
+    </div>
+    <!--wrapper end-->
+    <script type="text/javascript" src="~/assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/switcher.js"></script>
+    <script type="text/javascript" src="~/assets/js/popper.js"></script>
+    <script type="text/javascript" src="~/assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/slick/slick.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/jquery.range-min.js"></script>
+    <script type="text/javascript" src="~/assets/js/isotope.js"></script>
+    <script type="text/javascript" src="~/assets/js/html5lightbox.js"></script>
+    <script type="text/javascript" src="~/assets/js/wow.js"></script>
+    <script type="text/javascript" src="~/assets/js/script.js"></script>
+    <script type="text/javascript" src="http://www.shmai.com/preview/storenix-html/js/map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYc537bQom7ajFpWE5sQaVyz1SQa9_tuY&callback=initMap"></script>
+</body>
+
+
+<!-- Mirrored from www.shmai.com/preview/storenix-html/faqs.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Jul 2021 20:14:25 GMT -->
+</html>

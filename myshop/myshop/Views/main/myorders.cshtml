@@ -1,0 +1,77 @@
+﻿
+@{
+    ViewBag.Title = "myorders";
+    Layout = "~/Views/Shared/_mainlayout.cshtml";
+}
+
+<section>
+    <div class="block2 rs-overlay">
+        <div class="fixed-bg bg4"></div>
+        <div class="container">
+            <div class="pager-sec">
+                <div class="page-title">
+                    <h3>My Orders</h3>
+                </div>
+                <!--page-title end-->
+                <div class="page-links">
+                    <ul>
+                        <li><a href="@Url.Action("home", "main")" title="">Home</a></li>
+                        <li><span>My Orders</span></li>
+                    </ul>
+                </div>
+                <!--page-links end-->
+            </div>
+            <!--pager-sec end-->
+        </div>
+    </div>
+</section>
+<section>
+    <div class="block4 bd-btm">
+
+        <div class="container">
+            <hr/>
+            @{
+                var power = 1;
+                foreach (var pro in ViewBag.p)
+                {
+                    power = power + 1;
+                    var tot = pro.pprice * pro.pqyt;
+
+
+                        <table class="table table-dark">
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Product ID</th>
+                                    <th>Product Quantity</th>
+                                    <th>Total Amount</th>
+                                    <th>Status</th>
+                                    <th>Cancel Order</th>
+                                 
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td> @pro.oid </td>
+                                    <td><a href="@Url.Action("product", new {id = pro.pid })">@pro.pid</a></td>     
+                                    <td>@pro.pqyt</td>
+                                    <td>@tot</td>
+                                    <td>@pro.odelivery</td>
+                                    <td><a href="@Url.Action("deleteorder", new {id = pro.did })">Click Here</a></td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                 
+                    <br />
+
+                }
+                if (power == 1)
+                {
+                    <br />
+                    <tr><td>  <a class="btn btn-info btn-lg btn-block btn-huge" >Order List is Empty.</a></td></tr>
+                }
+            }
+        </div>
+   </div>
+</section>

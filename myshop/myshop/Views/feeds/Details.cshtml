@@ -1,0 +1,37 @@
+﻿@model myshop.feed
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_adminlayout1.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>
+        Feedbacks
+    </h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Questions
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.feedq)
+        </dd>
+
+        <dt>
+            Answers
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.feeda)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.feedid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

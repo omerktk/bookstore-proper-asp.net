@@ -1,0 +1,292 @@
+C:\Users\hp\source\repos\myshop\myshop\bin\myshop.dll.config
+C:\Users\hp\source\repos\myshop\myshop\bin\myshop.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\myshop.pdb
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\csc.exe
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\csc.exe.config
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\csc.rsp
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\csi.exe
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\csi.exe.config
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\csi.rsp
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\System.AppContext.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\System.Console.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\System.IO.Compression.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\System.IO.Pipes.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\System.Security.Claims.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\System.ValueTuple.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\System.Xml.XPath.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\vbc.exe
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\vbc.exe.config
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\vbc.rsp
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\VBCSCompiler.exe
+C:\Users\hp\source\repos\myshop\myshop\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\hp\source\repos\myshop\myshop\bin\EntityFramework.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\EntityFramework.SqlServer.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\System.Web.Helpers.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\System.Web.Mvc.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\System.Web.Razor.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\System.Web.Webpages.Deployment.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\System.Web.Webpages.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\System.Web.Webpages.Razor.dll
+C:\Users\hp\source\repos\myshop\myshop\bin\EntityFramework.xml
+C:\Users\hp\source\repos\myshop\myshop\bin\EntityFramework.SqlServer.xml
+C:\Users\hp\source\repos\myshop\myshop\bin\System.Web.Razor.xml
+C:\Users\hp\source\repos\myshop\myshop\bin\System.Web.Webpages.xml
+C:\Users\hp\source\repos\myshop\myshop\bin\System.Web.Webpages.Deployment.xml
+C:\Users\hp\source\repos\myshop\myshop\bin\System.Web.Webpages.Razor.xml
+C:\Users\hp\source\repos\myshop\myshop\bin\System.Web.Helpers.xml
+C:\Users\hp\source\repos\myshop\myshop\bin\System.Web.Mvc.xml
+C:\Users\hp\source\repos\myshop\myshop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\hp\source\repos\myshop\myshop\obj\Debug\myshop.csproj.AssemblyReference.cache
+C:\Users\hp\source\repos\myshop\myshop\obj\Debug\myshop.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\myshop\myshop\obj\Debug\myshop.csproj.CopyComplete
+C:\Users\hp\source\repos\myshop\myshop\obj\Debug\myshop.dll
+C:\Users\hp\source\repos\myshop\myshop\obj\Debug\myshop.pdb
+E:\project\p1\myshop\myshop\bin\myshop.dll.config
+E:\project\p1\myshop\myshop\bin\myshop.dll
+E:\project\p1\myshop\myshop\bin\myshop.pdb
+E:\project\p1\myshop\myshop\bin\roslyn\csc.exe
+E:\project\p1\myshop\myshop\bin\roslyn\csc.exe.config
+E:\project\p1\myshop\myshop\bin\roslyn\csc.rsp
+E:\project\p1\myshop\myshop\bin\roslyn\csi.exe
+E:\project\p1\myshop\myshop\bin\roslyn\csi.exe.config
+E:\project\p1\myshop\myshop\bin\roslyn\csi.rsp
+E:\project\p1\myshop\myshop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\project\p1\myshop\myshop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\project\p1\myshop\myshop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\project\p1\myshop\myshop\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\project\p1\myshop\myshop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\project\p1\myshop\myshop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\project\p1\myshop\myshop\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\project\p1\myshop\myshop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\project\p1\myshop\myshop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\project\p1\myshop\myshop\bin\roslyn\Microsoft.Managed.Core.targets
+E:\project\p1\myshop\myshop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\project\p1\myshop\myshop\bin\roslyn\System.AppContext.dll
+E:\project\p1\myshop\myshop\bin\roslyn\System.Collections.Immutable.dll
+E:\project\p1\myshop\myshop\bin\roslyn\System.Console.dll
+E:\project\p1\myshop\myshop\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\project\p1\myshop\myshop\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\project\p1\myshop\myshop\bin\roslyn\System.IO.Compression.dll
+E:\project\p1\myshop\myshop\bin\roslyn\System.IO.FileSystem.dll
+E:\project\p1\myshop\myshop\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\project\p1\myshop\myshop\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\project\p1\myshop\myshop\bin\roslyn\System.IO.Pipes.dll
+E:\project\p1\myshop\myshop\bin\roslyn\System.Reflection.Metadata.dll
+E:\project\p1\myshop\myshop\bin\roslyn\System.Security.AccessControl.dll
+E:\project\p1\myshop\myshop\bin\roslyn\System.Security.Claims.dll
+E:\project\p1\myshop\myshop\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\project\p1\myshop\myshop\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\project\p1\myshop\myshop\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\project\p1\myshop\myshop\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\project\p1\myshop\myshop\bin\roslyn\System.Security.Principal.Windows.dll
+E:\project\p1\myshop\myshop\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\project\p1\myshop\myshop\bin\roslyn\System.ValueTuple.dll
+E:\project\p1\myshop\myshop\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\project\p1\myshop\myshop\bin\roslyn\System.Xml.XmlDocument.dll
+E:\project\p1\myshop\myshop\bin\roslyn\System.Xml.XPath.dll
+E:\project\p1\myshop\myshop\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\project\p1\myshop\myshop\bin\roslyn\vbc.exe
+E:\project\p1\myshop\myshop\bin\roslyn\vbc.exe.config
+E:\project\p1\myshop\myshop\bin\roslyn\vbc.rsp
+E:\project\p1\myshop\myshop\bin\roslyn\VBCSCompiler.exe
+E:\project\p1\myshop\myshop\bin\roslyn\VBCSCompiler.exe.config
+E:\project\p1\myshop\myshop\bin\EntityFramework.dll
+E:\project\p1\myshop\myshop\bin\EntityFramework.SqlServer.dll
+E:\project\p1\myshop\myshop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\project\p1\myshop\myshop\bin\Microsoft.Web.Infrastructure.dll
+E:\project\p1\myshop\myshop\bin\System.Web.Helpers.dll
+E:\project\p1\myshop\myshop\bin\System.Web.Mvc.dll
+E:\project\p1\myshop\myshop\bin\System.Web.Razor.dll
+E:\project\p1\myshop\myshop\bin\System.Web.Webpages.Deployment.dll
+E:\project\p1\myshop\myshop\bin\System.Web.Webpages.dll
+E:\project\p1\myshop\myshop\bin\System.Web.Webpages.Razor.dll
+E:\project\p1\myshop\myshop\bin\EntityFramework.xml
+E:\project\p1\myshop\myshop\bin\EntityFramework.SqlServer.xml
+E:\project\p1\myshop\myshop\bin\System.Web.Razor.xml
+E:\project\p1\myshop\myshop\bin\System.Web.Webpages.xml
+E:\project\p1\myshop\myshop\bin\System.Web.Webpages.Deployment.xml
+E:\project\p1\myshop\myshop\bin\System.Web.Webpages.Razor.xml
+E:\project\p1\myshop\myshop\bin\System.Web.Helpers.xml
+E:\project\p1\myshop\myshop\bin\System.Web.Mvc.xml
+E:\project\p1\myshop\myshop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\project\p1\myshop\myshop\obj\Debug\myshop.csproj.CoreCompileInputs.cache
+E:\project\p1\myshop\myshop\obj\Debug\myshop.csproj.CopyComplete
+E:\project\p1\myshop\myshop\obj\Debug\myshop.dll
+E:\project\p1\myshop\myshop\obj\Debug\myshop.pdb
+E:\project\p1\myshop\myshop\obj\Debug\myshop.csprojAssemblyReference.cache
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\myshop.dll.config
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\myshop.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\myshop.pdb
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\csc.exe
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\csc.exe.config
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\csc.rsp
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\csi.exe
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\csi.exe.config
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\csi.rsp
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\System.AppContext.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\System.Console.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\System.IO.Compression.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\System.IO.Pipes.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\System.Security.Claims.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\System.ValueTuple.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\System.Xml.XPath.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\vbc.exe
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\vbc.exe.config
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\vbc.rsp
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\VBCSCompiler.exe
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\EntityFramework.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\EntityFramework.SqlServer.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\System.Web.Helpers.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\System.Web.Mvc.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\System.Web.Razor.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\System.Web.Webpages.Deployment.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\System.Web.Webpages.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\System.Web.Webpages.Razor.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\EntityFramework.xml
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\EntityFramework.SqlServer.xml
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\System.Web.Razor.xml
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\System.Web.Webpages.xml
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\System.Web.Webpages.Deployment.xml
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\System.Web.Webpages.Razor.xml
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\System.Web.Helpers.xml
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\System.Web.Mvc.xml
+C:\Users\NOMAN YT\source\repos\myshop\myshop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\NOMAN YT\source\repos\myshop\myshop\obj\Debug\myshop.csproj.AssemblyReference.cache
+C:\Users\NOMAN YT\source\repos\myshop\myshop\obj\Debug\myshop.csproj.CoreCompileInputs.cache
+C:\Users\NOMAN YT\source\repos\myshop\myshop\obj\Debug\myshop.csproj.CopyComplete
+C:\Users\NOMAN YT\source\repos\myshop\myshop\obj\Debug\myshop.dll
+C:\Users\NOMAN YT\source\repos\myshop\myshop\obj\Debug\myshop.pdb
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\myshop.dll.config
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\myshop.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\myshop.pdb
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\csc.exe
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\csc.exe.config
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\csc.rsp
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\csi.exe
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\csi.exe.config
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\csi.rsp
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\Microsoft.Managed.Core.targets
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\System.AppContext.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\System.Collections.Immutable.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\System.Console.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\System.IO.Compression.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\System.IO.FileSystem.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\System.IO.Pipes.AccessControl.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\System.IO.Pipes.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\System.Reflection.Metadata.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\System.Security.AccessControl.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\System.Security.Claims.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\System.Security.Cryptography.Encoding.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\System.Security.Cryptography.Primitives.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\System.Security.Principal.Windows.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\System.ValueTuple.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\System.Xml.ReaderWriter.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\System.Xml.XmlDocument.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\System.Xml.XPath.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\System.Xml.XPath.XDocument.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\vbc.exe
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\vbc.exe.config
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\vbc.rsp
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\VBCSCompiler.exe
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\roslyn\VBCSCompiler.exe.config
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\EntityFramework.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\EntityFramework.SqlServer.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\Microsoft.Web.Infrastructure.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\System.Web.Helpers.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\System.Web.Mvc.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\System.Web.Razor.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\System.Web.Webpages.Deployment.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\System.Web.Webpages.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\System.Web.Webpages.Razor.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\EntityFramework.xml
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\EntityFramework.SqlServer.xml
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\System.Web.Razor.xml
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\System.Web.Webpages.xml
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\System.Web.Webpages.Deployment.xml
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\System.Web.Webpages.Razor.xml
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\System.Web.Helpers.xml
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\System.Web.Mvc.xml
+G:\backup\Downloads\folders\Project\myshop\myshop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\backup\Downloads\folders\Project\myshop\myshop\obj\Debug\myshop.csproj.AssemblyReference.cache
+G:\backup\Downloads\folders\Project\myshop\myshop\obj\Debug\myshop.csproj.CoreCompileInputs.cache
+G:\backup\Downloads\folders\Project\myshop\myshop\obj\Debug\myshop.csproj.CopyComplete
+G:\backup\Downloads\folders\Project\myshop\myshop\obj\Debug\myshop.dll
+G:\backup\Downloads\folders\Project\myshop\myshop\obj\Debug\myshop.pdb

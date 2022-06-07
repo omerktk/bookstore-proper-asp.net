@@ -1,0 +1,31 @@
+﻿@model myshop.tbluser
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_adminlayout.cshtml";
+}
+
+<!-- Main CSS-->
+<link href="https://cdn.discordapp.com/attachments/822462520061198356/870442580893134978/logincss.css" rel="stylesheet" media="all">
+
+                    <h2 class="title">Login Here</h2>
+                    <table>
+                        <form action="/admin/index" method="post">
+                            <tr>
+                                <td><label class="label">USER NAME</label></td>
+                                <td><input id="uname" class="input--style-4" name="uname" type="text" value="" /></td>
+                            </tr>
+                            <tr>
+                                <td></br></td>
+                                
+                            </tr>
+                            <tr>
+                                <td> <label class="label">PASSWORD</label></td>
+                                <td><input id="upass" class="input--style-4" name="upass" type="password" value="" /></td>
+                            </tr>
+                            <td>@ViewBag.msg</td>
+                            </tr>
+                            <tr>
+                                <td><input class="btn btn--radius-2 btn--blue" type="submit" value="Login"></input></td>
+                            </tr>
+</table>
+               

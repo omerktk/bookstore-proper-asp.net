@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "Images";
+    Layout = "~/Views/Shared/_adminlayout1.cshtml";
+}
+@*@Session["pid"]*@
+
+@*@foreach (var p in ViewBag.pro)
+{
+<h2>Add images for @p.pname</h2>
+}*@
+<table>
+
+    @using (Html.BeginForm("Images", "Products", FormMethod.Post, new { enctype = "multipart/Form-data" }))
+    {
+    <tr>
+        <td>Select Images: </td>
+        <td><input type="file" name="file" /></td>
+        <td><input type="submit" value="Save" /></td>
+    </tr>
+
+
+    }
+</table>
+
+</br>
+</br>
+
+<div>
+    @foreach (var i in ViewBag.imgs)
+    {
+        <img src="@Url.Content("~/Images/"+i.img_name)" width="100px" height="100px" />
+    }
+</div>
+<hr/>
+<div>
+    <div class="form-actions no-color">
+        @Html.ActionLink("Back to List", "index", "products")
+    </div>
+
+</div>

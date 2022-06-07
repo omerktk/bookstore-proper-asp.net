@@ -1,0 +1,52 @@
+﻿@model IEnumerable<myshop.tblcust>
+
+@{
+    ViewBag.Title = "Customers";
+    Layout = "~/Views/Shared/_adminlayout1.cshtml";
+}
+
+<h2>Customers</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Customer ID
+        </th>
+        <th>
+            Customer Name
+        </th>
+        <th>
+            Customer Email
+        </th>
+        <th>
+            Customer Password
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.customerid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.customername)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.customermail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.customerpass)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.customerid }) |
+            @Html.ActionLink("Details", "Details", new { id = item.customerid }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.customerid })
+        </td>
+    </tr>
+}
+
+</table>

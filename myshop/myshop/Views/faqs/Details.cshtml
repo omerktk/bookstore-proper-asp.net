@@ -1,0 +1,35 @@
+﻿@model myshop.faq
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_adminlayout1.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>FAQs</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Questions
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.faqq)
+        </dd>
+
+        <dt>
+            Answers
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.faqa)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.faqid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

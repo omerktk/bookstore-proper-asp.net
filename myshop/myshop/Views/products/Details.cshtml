@@ -1,0 +1,54 @@
+﻿@model myshop.tblpro
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_adminlayout1.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+ 
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Product Name
+
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pname)
+        </dd>
+
+        <dt>
+            Product Price
+
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pprice)
+        </dd>
+
+        <dt>
+            Product Details
+
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pdetails)
+        </dd>
+
+        <dt>
+            Product Category
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblcat.cname)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.pid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

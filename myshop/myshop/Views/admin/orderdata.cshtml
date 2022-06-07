@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewBag.Title = "orderdata";
+    Layout = "~/Views/Shared/_adminlayout1.cshtml";
+}
+
+
+<div id="dvContents">
+    <h2>Order Data</h2>
+    <input style="margin-top:-20%;" type="button" onclick="PrintTable();" value="Print Data" />
+    <br />
+   
+    <br />
+    <table class="table">
+        @{ foreach (var udata in ViewBag.data)
+            {
+                <h6>Full Name :  @udata.opname</h6>
+                <h6>Address : @udata.opaddress</h6>
+                <h6>Phone Number : @udata.opphone</h6>
+            }
+        }
+        <thead>
+            <tr>
+
+                <th>Product ID</th>
+                <th>Product Quantity</th>
+                <th>Order Status</th>
+                <th>Delete Item</th>
+
+            </tr>
+        </thead>
+        @{
+
+            foreach (var pro in ViewBag.p)
+            {
+
+
+                <tbody>
+                            <tr>
+
+                                <td> @pro.pid </td>
+                                <td> @pro.pqyt</td>
+                                <td> <a href="@Url.Action("edit", "orderstatus", new {id = pro.did })">@pro.odelivery</a></td>
+                                <td> <a href="@Url.Action("delete", "tblorderdetails", new {id = pro.did })">Delete</a></td>
+
+                            </tr>
+                </tbody>
+
+
+                <br />
+            }
+        }
+        @{
+            var c = 1;
+
+
+            foreach (var prodata in ViewBag.p)
+            {
+                if (@c == 1)
+                {
+                    var total = ViewBag.price;
+                    c = c + 1;
+                    <th>Order ID :  @prodata.oid</th>
+                    <th>Customer ID : @prodata.custid</th>
+                    <th>Total Price : @total</th>
+
+                }
+            }
+        }
+    </table>
+
+</div>
+<hr/>
+<h6>Delete Order : @ViewBag.oid <a href="@Url.Action("delete", "tblorders", new {id = ViewBag.oid })">Delete</a></h6> 
+
+<p>(Note): To delete any order first delete all data inside!</p>
+<script type="text/javascript">
+    function PrintTable() {
+        var printWindow = window.open('', '', 'height=200,width=400');
+        printWindow.document.write('<html><head><title>Table Contents</title>');
+
+
+
+        //Print the DIV contents i.e. the HTML Table.
+        printWindow.document.write('<body>');
+        var divContents = document.getElementById("dvContents").innerHTML;
+        printWindow.document.write(divContents);
+        printWindow.document.write('</body>');
+
+        printWindow.document.write('</html>');
+        printWindow.document.close();
+        printWindow.print();
+    }
+</script>

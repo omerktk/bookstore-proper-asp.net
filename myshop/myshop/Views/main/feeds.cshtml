@@ -1,0 +1,90 @@
+﻿
+@{
+    ViewBag.Title = "faqs";
+    Layout = "~/Views/Shared/_mainlayout.cshtml";
+}
+
+
+<!--responsive-mobile-menu end-->
+<section>
+    <div class="block2 rs-overlay">
+        <div class="fixed-bg bg4"></div>
+        <div class="container">
+            <div class="pager-sec">
+                <div class="page-title">
+                    <h3>Queries</h3>
+                </div>
+                <!--page-title end-->
+                <div class="page-links">
+                    <ul>
+                        <li><a href="#" title="">Home</a></li>
+                        <li><span>Queries</span></li>
+                    </ul>
+                </div>
+                <!--page-links end-->
+            </div>
+            <!--pager-sec end-->
+        </div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="block4 bd-btm">
+        <div class="container">
+            <h2 style="font-size:180%;">Your Feedback or Queries</h2>
+            <section>
+
+                <form action="/main/feeddone" method="post">
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="feedq"></label>
+                        <div class="col-md-10">
+                            <input class="form-control text-box single-line" placeholder="Feedback or Queries" id="feedq" name="feedq" type="text" value="" required maxlength="150"/>
+                            <input class="form-control text-box single-line" id="feeda" name="feeda" type="hidden" value="Admin Will Answer Soon" />
+                            <span class="field-validation-valid text-danger" data-valmsg-for="feedq" data-valmsg-replace="true"></span>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Submit" class="btn btn-default" />
+                        </div>
+                    </div>
+        </div>
+        </form>
+</section>
+
+    <div class="block4 bd-btm">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 style="font-size:180%;">Answers</h2>
+                    <br/>
+                    <div class="toshia-faqs">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tab1">
+                                <div class="toshia-accordion toggle">
+                                    @foreach (var pro in ViewBag.p)
+                                    {
+                                        <div class="toggle-item">
+                                            <h2>@pro.feedq</h2>
+                                            <div class="content">
+                                                <p>@pro.feeda</p>
+                                            </div>
+                                        </div><!-- Toggle Item -->
+                                    }
+                                </div><!-- Provide Accordion -->
+                            </div><!-- Tab 4 -->
+                        </div>
+                    </div><!-- Toshia Faqs -->
+                </div>
+            </div>
+        </div>
+    </div>
+   
+

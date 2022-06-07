@@ -1,0 +1,43 @@
+﻿@model myshop.tblcust
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_adminlayout1.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tblcust</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.customername)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.customername)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.customermail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.customermail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.customerpass)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.customerpass)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.customerid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

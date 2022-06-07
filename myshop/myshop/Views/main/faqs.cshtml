@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "faqs";
+    Layout = "~/Views/Shared/_mainlayout.cshtml";
+}
+
+
+<!--responsive-mobile-menu end-->
+<section>
+    <div class="block2 rs-overlay">
+        <div class="fixed-bg bg4"></div>
+        <div class="container">
+            <div class="pager-sec">
+                <div class="page-title">
+                    <h3>FAQs</h3>
+                </div>
+                <!--page-title end-->
+                <div class="page-links">
+                    <ul>
+                        <li><a href="#" title="">Home</a></li>
+                        <li><span>FAQs</span></li>
+                    </ul>
+                </div>
+                <!--page-links end-->
+            </div>
+            <!--pager-sec end-->
+        </div>
+    </div>
+</section>
+<section>
+    <div class="block4 bd-btm">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 style="font-size:180%;">Faqs</h2>
+                    <br />
+                    <div class="toshia-faqs">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tab1">
+                                <div class="toshia-accordion toggle">
+                                    @foreach (var pro in ViewBag.p)
+                                    {
+                                        <div class="toggle-item">
+                                            <h2>@pro.faqq</h2>
+                                            <div class="content">
+                                                <p>@pro.faqa</p>
+                                            </div>
+                                        </div><!-- Toggle Item -->
+                                    }
+                                </div><!-- Provide Accordion -->
+                            </div><!-- Tab 4 -->
+                        </div>
+                    </div><!-- Toshia Faqs -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

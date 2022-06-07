@@ -1,0 +1,72 @@
+﻿@model IEnumerable<myshop.tblorder>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_mainlayout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.oid)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.opname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.opphone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.opaddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.oamount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tblcust.customername)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.odate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.oid)
+    </td>
+
+    <td>
+        @Html.DisplayFor(modelItem => item.opname)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.opphone)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.opaddress)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.oamount)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.tblcust.customername)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.odate)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.oid }) |
+        @Html.ActionLink("Details", "Details", new { id = item.oid }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.oid })
+    </td>
+</tr>
+}
+
+</table>

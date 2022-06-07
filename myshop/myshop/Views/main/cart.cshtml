@@ -1,0 +1,107 @@
+﻿@model myshop.myshopDBEntities
+@{
+    ViewBag.Title = "cart";
+    Layout = "~/Views/Shared/_mainlayout.cshtml";
+}
+
+<section>
+    <div class="block2 rs-overlay">
+        <div class="fixed-bg bg4"></div>
+        <div class="container">
+            <div class="pager-sec">
+                <div class="page-title">
+                    <h3>Your Cart</h3>
+                </div>
+                <!--page-title end-->
+                <div class="page-links">
+                    <ul>
+                        <li><a href="@Url.Action("home", "main")" title="">Home</a></li>
+                        <li><span>Cart</span></li>
+                    </ul>
+                </div>
+                <!--page-links end-->
+            </div>
+            <!--pager-sec end-->
+        </div>
+    </div>
+</section>
+<section>
+    <div class="block4 bd-btm">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table">
+                        <tr style="background-color: #cc0d0d; color: white; ">
+                            <td style="font-size: 130%;">Product Name</td>
+                            <td style="font-size: 130%;">Product Price</td>
+                            <td style="font-size: 130%;">Product Quantity</td>
+                            <td style="font-size: 130%;">Total Ammount</td>
+                        </tr>
+                        @{
+                            myshopDBEntities obj = new myshopDBEntities();
+                            var it = obj.tblproes.ToList();
+                            var total = 0;
+
+                            if (ViewBag.c != null)
+                            {
+                                foreach (var item in ViewBag.c)
+                                {
+
+                                    foreach (var i in it)
+                                    {
+                                        if (i.pid == item.iid)
+                                        {
+                                            var amt = item.iqty * i.pprice;
+
+                                            <tr>
+                                                <td>@i.pname</td>
+                                                <td>@i.pprice</td>
+                                                <td>@item.iqty</td>
+                                                <td>PKR: @amt</td>
+                                            </tr>
+                                            total += amt;
+                                        }
+                                    }
+                                }
+                            }
+                            if (total == 0)
+                            {
+                                <br />
+                                <tr><td>  <h5>YOUR CART IS EMPTY</h5></td></tr>
+                            }
+                            else
+                            {
+                                <form action="/main/checkout" method="post">
+                                <tr>
+                                    <td><a class="btn btn-success btn-sm" style="color:white;" href="@Url.Action("home", "main")">Back To Shopping</a></td>
+                                    <td><a class="btn btn-success btn-sm" style="color:white;" href="@Url.Action("cartempty", "main")">Clear Cart</a></td>
+                                    <td>
+                                        <input type="hidden" value="@total" name="money" /><input type="hidden" value="1" name="userid" />
+                                        <input type="submit" value="Checkout" class="btn btn-success btn-sm" />
+                                    </td>
+                                    <td style="font-size: 130%;">PKR: @total </td>
+                                </tr>
+                                </form>
+                            }
+                        }
+                    </table>
+
+                    @{
+                        if (total == 0)
+                        {
+                            <br />
+                            <a class="btn btn-success btn-sm" style="color:white;" href="@Url.Action("home", "main")">Back To Shopping</a>
+                            }
+                            else
+                            {
+
+
+                            }
+                        }   
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,41 @@
+﻿@model IEnumerable<myshop.faq>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_adminlayout1.cshtml";
+}
+
+<h2>Faqs</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Questions
+        </th>
+        <th>
+            Answers
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.faqq)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.faqa)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.faqid }) |
+                @Html.ActionLink("Details", "Details", new { id = item.faqid }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.faqid })
+            </td>
+        </tr>
+    }
+
+</table>
